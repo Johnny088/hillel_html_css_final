@@ -12,20 +12,61 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
-        <a href="./index.html" class="header__logo">
-          <img src="/images/logo.svg" alt="logo"
-        /></a>
-        <nav class="navigation">
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <img src="./sass/images/bascket.svg" alt="bascket" />
+      <div class="container desktop">
+        <a href="#" class="header_logo"
+          ><svg width="132" height="36" class="header__icon">
+            <use href="./icons/sprite.svg#logo"></use>
+          </svg>
+        </a>
+        <nav class="header__nav">
+          <ul class="header__nav">
+            <li class="header__nav__list">
+              <a href="#" class="header__nav__list__item"> Home </a>
             </li>
+            <li class="header__nav__list">
+              <a href="#" class="header__nav__list__item">Menu</a>
+            </li>
+            <li class="header__nav__list">
+              <a href="#" class="header__nav__list__item">Events</a>
+            </li>
+            <li class="header__nav__list">
+              <a href="" class="header__nav__list__item">About us</a>
+            </li>
+          </ul>
+          <ul class="header__nav">
             <li class="navigation__item">
-              <img src="./sass/images/burger.svg" alt="bascket" />
+              <button>log in</button>
+            </li>
+            <li>
+              <svg width="30" height="30" class="header__cart">
+                <use href="./icons/sprite.svg#cart"></use>
+              </svg>
+            </li>
+            <li>
+              <svg width="30" height="30" class="header__burger">
+                <use href="./icons/sprite.svg#burger"></use>
+              </svg>
             </li>
           </ul>
         </nav>
+      </div>
+      <div class="mobile" data-menu>
+        <ul class="mobile__menu">
+          <li class="mobile__menu__item">
+            <a href="#" class="mobile__menu__link">Home</a>
+          </li>
+          <li class="mobile__menu__item">
+            <a href="#" class="mobile__menu__link">Menu</a>
+          </li>
+
+          <li class="mobile__menu__item">
+            <a href="#" class="mobile__menu__link">Events</a>
+          </li>
+
+          <li class="mobile__menu__item">
+            <a href="#" class="mobile__menu__link">About us</a>
+          </li>
+        </ul>
       </div>
     </header>
     <main>

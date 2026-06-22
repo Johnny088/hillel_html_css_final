@@ -1,8 +1,22 @@
 body {
   background: linear-gradient(90deg, #1c0c00, #1c0700, #140900, #1c0c00);
+  font-size: 16px;
 }
 
-.container {
-  width: 430px;
-  background: linear-gradient(90deg, #1c0c00, #1c0700, #140900, #1c0c00);
+p, h1, h2, h3, ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+.header__icon, .header__cart, .header__burger {
+  stroke: #FFA228;
+  fill: #FF6432;
 }/*# sourceMappingURL=main.css.map */
