@@ -20,4 +20,61 @@ ul {
 .header__icon, .header__cart, .header__burger, .hero__lighting {
   stroke: #FFA228;
   fill: #FF6432;
+}
+
+.footer {
+  background-color: #1a0b05;
+  padding: 60px 0 30px 0;
+}
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 60px;
+}
+.footer__logo {
+  font-size: 32px;
+  font-weight: 800;
+  color: #ff7a30;
+  text-decoration: none;
+}
+.footer__nav {
+  display: flex;
+  gap: 60px;
+}
+.footer__title {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.footer__link {
+  color: #a3a3a3;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.footer__link:hover {
+  color: #ff7a30;
+}
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 30px;
+}
+.footer__tel {
+  color: #ff7a30;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.footer__socials {
+  display: flex;
+  gap: 16px;
 }/*# sourceMappingURL=main.css.map */

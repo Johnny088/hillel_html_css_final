@@ -13,12 +13,12 @@
   <body>
     <header class="header">
       <div class="container desktop">
-        <a href="#" class="header_logo"
+        <a href="#" class="header__logo"
           ><svg width="132" height="36" class="header__icon">
             <use href="./icons/sprite.svg#logo"></use>
           </svg>
         </a>
-        <nav class="header__nav">
+        <nav class="header__nav__wrapper">
           <ul class="header__nav">
             <li class="header__nav__list">
               <a href="#" class="header__nav__list__item"> Home </a>
@@ -30,7 +30,7 @@
               <a href="#" class="header__nav__list__item">Events</a>
             </li>
             <li class="header__nav__list">
-              <a href="" class="header__nav__list__item">About us</a>
+              <a href="#" class="header__nav__list__item">About us</a>
             </li>
           </ul>
           <ul class="header__nav">
@@ -78,12 +78,12 @@
           <div class="hero__info">
             <h1 class="hero__title">
               The Fastest Pizza
-              <svg class="hero__lighting" width="48" heght="84">
+              <svg class="hero__lighting" width="48" height="84">
                 <use href="./icons/sprite.svg#lightning"></use>
               </svg>
               Delivery
             </h1>
-            <p hero__description>
+            <p class="hero__description">
               We will deliver juicy pizza for your family in 30 minutes, if the
               courier is late -
               <span class="hero__description__span">pizza is free</span>!
@@ -104,7 +104,10 @@
               class="hero__pizza"
               src="./images/hero_pizza.png"
               alt="pizza"
-              srcset="./images/hero_pizza.png 1x, ./images/hero__pizza_x2.png x2"
+              srcset="
+                ./images/hero_pizza.png     1x,
+                ./images/hero__pizza_x2.png 2x
+              "
             />
             <img
               class="hero__slice"
@@ -129,30 +132,30 @@
       <section class="menu">
         <div class="container">
           <h2 class="menu__title">Menu</h2>
-          <ul class="menu_list">
+          <ul class="menu__list">
             <li class="menu__option">
-              <button menu__option__button>Show All</button>
+              <button class="menu__option__button">Show All</button>
             </li>
             <li class="menu__option">
-              <button menu__option__button>Meat</button>
+              <button class="menu__option__button">Meat</button>
             </li>
             <li class="menu__option">
-              <button menu__option__button>Vegetarian</button>
+              <button class="menu__option__button">Vegetarian</button>
             </li>
             <li class="menu__option">
-              <button menu__option__button>Sea products</button>
+              <button class="menu__option__button">Sea products</button>
             </li>
             <li class="menu__option">
-              <button menu__option__button>Mushroom</button>
+              <button class="menu__option__button">Mushroom</button>
             </li>
           </ul>
           <ul class="menu__list">
-            <li menu__item>
+            <li class="menu__item">
               <img
                 class="menu__img"
                 src="./images/italian_m.png"
                 alt="italian pizza"
-                srcset="./images/italian_m.png 1x, ./images/italian_x2_m.png x2"
+                srcset="./images/italian_m.png 1x, ./images/italian_x2_m.png 2x"
               />
 
               <h3 class="menu__title">Italian</h3>
@@ -178,7 +181,7 @@
                 <div class="menu__price__wrapper">
                   <button type="button" class="menu__price__counter">-</button>
 
-                  <span class="menu_number">1</span>
+                  <span class="menu__number">1</span>
 
                   <button type="button" class="menu__price__counter">+</button>
                 </div>
@@ -186,12 +189,12 @@
               <button class="menu__order">Order now</button>
             </li>
 
-            <li menu__item>
+            <li class="menu__item">
               <img
                 class="menu__img"
                 src="./images/venecia_m.png"
                 alt="Venecia pizza"
-                srcset="./images/venecia_m.png 1x, ./images/venecia_x2_m.png x2"
+                srcset="./images/venecia_m.png 1x, ./images/venecia_x2_m.png 2x"
               />
               <h3 class="menu__title">Venecia</h3>
 
@@ -220,12 +223,12 @@
               <button class="menu__order">Order now</button>
             </li>
 
-            <li menu__item>
+            <li class="menu__item">
               <img
                 class="menu__img"
                 src="./images/meat_m.png"
                 alt="meat pizza"
-                srcset="./images/meat_m.png 1x, ./images/meat_x2_m.png x2"
+                srcset="./images/meat_m.png 1x, ./images/meat_x2_m.png 2x"
               />
               <h3 class="menu__title">Meat</h3>
 
@@ -254,12 +257,12 @@
               <button class="menu__order">Order now</button>
             </li>
 
-            <li menu__item>
+            <li class="menu__item">
               <img
                 class="menu__img"
                 src="./images/cheese_m.png"
                 alt="cheese pizza"
-                srcset="./images/cheese_m.png 1x, ./images/cheese_x2_m.png x2"
+                srcset="./images/cheese_m.png 1x, ./images/cheese_x2_m.png 2x"
               />
               <h3 class="menu__title">Cheese</h3>
 
@@ -295,19 +298,25 @@
             class="menu__popular"
             src="./images/menu_popular_x1.png"
             alt="Popular pizza"
-            srcset="././images/menu_popular_x1.png x1, ./images/menu_popular_x2.png x2"
+            srcset="
+              ././images/menu_popular_x1.png 1x,
+              ./images/menu_popular_x2.png   2x
+            "
           />
           <h4 class="menu__popular__title">MOST POPULAR PIZZA</h4>
         </div>
         <!--   -------------------------------------------------------------------------------------- -->
 
         <ul class="menu__list">
-          <li menu__item>
+          <li class="menu__item">
             <img
               class="menu__img"
               src="./images/argentina_m.png"
               alt="Argentina"
-              srcset="./images/argentina_m.png 1x, ./images/argentina_x2_m.png  x2"
+              srcset="
+                ./images/argentina_m.png    1x,
+                ./images/argentina_x2_m.png 2x
+              "
             />
 
             <h3 class="menu__title">Argentina</h3>
@@ -332,7 +341,7 @@
               <div class="menu__price__wrapper">
                 <button type="button" class="menu__price__counter">-</button>
 
-                <span class="menu_number">1</span>
+                <span class="menu__number">1</span>
 
                 <button type="button" class="menu__price__counter">+</button>
               </div>
@@ -340,12 +349,15 @@
             <button class="menu__order">Order now</button>
           </li>
 
-          <li menu__item>
+          <li class="menu__item">
             <img
               class="menu__img"
               src="./images/mashrooms_m.png"
               alt="Mashroom"
-              srcset="./images/mashrooms_x2_m.png 1x, ./images/mashrooms_x2_m.png x2"
+              srcset="
+                ./images/mashrooms_x2_m.png 1x,
+                ./images/mashrooms_x2_m.png 2x
+              "
             />
             <h3 class="menu__title">Mashroom</h3>
 
@@ -373,12 +385,12 @@
             <button class="menu__order">Order now</button>
           </li>
 
-          <li menu__item>
+          <li class="menu__item">
             <img
               class="menu__img"
               src="./images/tomato_m.png"
               alt="Tomato"
-              srcset="./images/tomato_m.png 1x, ./images/tomato_x2_m.png x2"
+              srcset="./images/tomato_m.png 1x, ./images/tomato_x2_m.png 2x"
             />
             <h3 class="menu__title">Tomato</h3>
 
@@ -406,12 +418,15 @@
             <button class="menu__order">Order now</button>
           </li>
 
-          <li menu__item>
+          <li class="menu__item">
             <img
               class="menu__img"
               src="./images/italian_v2_x1.png "
               alt="cheese pizza"
-              srcset="./images/italian_v2_x1.png 1x, ./images/italian_v2_x2.png  x2"
+              srcset="
+                ./images/italian_v2_x1.png 1x,
+                ./images/italian_v2_x2.png 2x
+              "
             />
             <h3 class="menu__title">Italian x2</h3>
 
@@ -441,8 +456,200 @@
         </ul>
       </section>
       <section class="events">
-        <div class="container"></div>
+        <div class="container">
+          <div class="events__cover how__we__cooking">
+            <h3 class="events__cover__title">HOW WE COOKING</h3>
+            <button class="events__more__btn">More</button>
+          </div>
+          <div class="events__cover our__blog">
+            <h3 class="events__cover__title">OUR BLOG</h3>
+            <button class="events__more__btn">More</button>
+          </div>
+          <div class="events__article">
+            <h2 class="events__article__title">Events</h2>
+            <p class="events__article__desctiption">
+              There are regular events in our pizzeria that will allow you to
+              eat delicious food for a lower price!
+            </p>
+          </div>
+
+          <div class="events__cover two__pizza__one__price">
+            <h3 class="events__cover__title">TWO PIZZA FOR 1 PRICE</h3>
+            <button class="events__more__btn">More</button>
+            <img
+              class="events__egg__bacon"
+              src="./images/egg_bacon_1x.png"
+              alt="eggs"
+              srcset="
+                ./images/egg_bacon_1x.png 1x,
+                ./images/egg_bacon_2x.png 2x
+              "
+            />
+          </div>
+
+          <div class="events__cover kitchen__tour">
+            <h3 class="events__cover__title">KITCHEN TOUR</h3>
+            <button class="events__more__btn">More</button>
+            <img
+              class="events__buritto"
+              src="./images/buritto_1x.png"
+              alt="burito"
+              srcset="./images/buritto_1x.png 1x, ./images/buritto_1x.png 2x"
+            />
+          </div>
+          <div class="events__cover free__coffee">
+            <h3 class="events__cover__title">FREE COFFEE FOR 3 PIZZA</h3>
+            <button class="events__more__btn">More</button>
+            <img
+              class="events__coffee"
+              src="./images/coffee_1x.png"
+              alt="coffee"
+              srcset="./images/coffee_1x.png 1x, ./images/coffee_1x.png 2x"
+            />
+          </div>
+          <div class="events__cover our__instagram">
+            <h3 class="events__cover__title">OUR INSTAGRAM</h3>
+            <button class="events__more__btn">More</button>
+          </div>
+          <div class="events__cover where__choice">
+            <h3 class="events__cover__title">WHERE ARE YOU CHOOSE US?</h3>
+            <button class="events__more__btn">More</button>
+          </div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="container">
+          <div class="about__article">
+            <h2 class="about__title">About us</h2>
+            <p class="about__description">
+              In just a couple of years, we have opened 6 outlets in different
+              cities: Kazan, Chelyabinsk, Ufa, Samara, Izhevsk, and in the
+              future we plan to develop the network in other major cities of
+              Russia.
+            </p>
+            <img
+              src="./images/about__pizza__1x.png"
+              alt="bunch of pizza"
+              srcset="
+                images/about__pizza__1x.png 1x,
+                images/about__pizza__1x.png 2x
+              "
+            />
+            <p class="about__description">
+              The kitchen of each point is at least: 400-500 sq. m. meters,
+              hundreds of employees, smoothly performing work in order to
+              receive / prepare / form / deliver customer orders on time.
+            </p>
+            <svg><use href="./icons/sprite.svg#about_arrow"></use></svg>
+          </div>
+          <div class="about__cover">
+            <img
+              class="about__giant__pizza"
+              src="./images/giant_pizza_1x.png"
+              alt="giant pizza"
+              srcset="
+                ./images/giant_pizza_1x.png 1x,
+                ./images/giant_pizza_1x.png 2x
+              "
+            />
+            <img
+              class="about__fries"
+              src="./images/about_us_fries_1x.png"
+              alt="fries"
+              srcset="
+                ./images/about_us_fries_1x.png 1x,
+                ./images/about_us_fries_1x.png 2x
+              "
+            />
+            <img
+              src="./images/about_us_slice_1x.png"
+              alt="slice of pizza"
+              srcset="
+                ./images/about_us_slice_1x.png 1x,
+                ./images/about_us_slice_1x.png 2x
+              "
+            />
+          </div>
+        </div>
       </section>
     </main>
+    <footer class="footer">
+      <div class="container footer__wrapper">
+        <div class="footer__top">
+          <a href="#" class="footer__logo">pizzashop</a>
+
+          <nav class="footer__nav">
+            <div class="footer__col">
+              <h4 class="footer__title">Home</h4>
+              <ul class="footer__list">
+                <li><a href="#" class="footer__link">To Order</a></li>
+                <li><a href="#" class="footer__link">About us</a></li>
+                <li><a href="#" class="footer__link">Events</a></li>
+                <li><a href="#" class="footer__link">Menu</a></li>
+              </ul>
+            </div>
+
+            <div class="footer__col">
+              <h4 class="footer__title">Events</h4>
+              <ul class="footer__list">
+                <li>
+                  <a href="#" class="footer__link">3 Pizza 1 Free Coffee</a>
+                </li>
+                <li>
+                  <a href="#" class="footer__link">2 Pizza for 1 Price</a>
+                </li>
+                <li><a href="#" class="footer__link">Kitchen Tour</a></li>
+              </ul>
+            </div>
+
+            <div class="footer__col">
+              <h4 class="footer__title">Menu</h4>
+              <ul class="footer__list">
+                <li><a href="#" class="footer__link">Show All</a></li>
+                <li><a href="#" class="footer__link">Seaproducts</a></li>
+                <li><a href="#" class="footer__link">Vegan</a></li>
+                <li><a href="#" class="footer__link">Meat</a></li>
+              </ul>
+            </div>
+
+            <div class="footer__col">
+              <h4 class="footer__title">About Us</h4>
+              <ul class="footer__list">
+                <li><a href="#" class="footer__link">Our History</a></li>
+                <li><a href="#" class="footer__link">Why We?</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+
+        <div class="footer__bottom">
+          <a href="tel:+79373335533" class="footer__tel">+7 (937) 333-55-33</a>
+
+          <ul class="footer__socials">
+            <li>
+              <a href="#" class="footer__social-link">
+                <svg width="24" height="24">
+                  <use href="./icons/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer__social-link">
+                <svg width="24" height="24">
+                  <use href="./icons/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer__social-link">
+                <svg width="24" height="24">
+                  <use href="./icons/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
