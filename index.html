@@ -18,38 +18,46 @@
             <use href="./icons/sprite.svg#logo"></use>
           </svg>
         </a>
-        <nav class="header__nav__wrapper">
-          <ul class="header__nav">
-            <li class="header__nav__list">
-              <a href="#" class="header__nav__list__item"> Home </a>
+
+        <nav class="header__navlist__wrapper">
+          <ul class="header__navlist">
+            <li class="header__navlist__item">
+              <a href="#" class="header__navlist__link"> Home </a>
             </li>
-            <li class="header__nav__list">
-              <a href="#" class="header__nav__list__item">Menu</a>
+            <li class="header__navlist__item">
+              <a href="#" class="header__navlist__link">Menu</a>
             </li>
-            <li class="header__nav__list">
-              <a href="#" class="header__nav__list__item">Events</a>
+            <li class="header__navlist">
+              <a href="#" class="header__navlist__link">Events</a>
             </li>
-            <li class="header__nav__list">
-              <a href="#" class="header__nav__list__item">About us</a>
-            </li>
-          </ul>
-          <ul class="header__nav">
-            <li class="navigation__item">
-              <button>log in</button>
-            </li>
-            <li>
-              <svg width="30" height="30" class="header__cart">
-                <use href="./icons/sprite.svg#cart"></use>
-              </svg>
-            </li>
-            <li>
-              <svg width="30" height="30" class="header__burger">
-                <use href="./icons/sprite.svg#burger"></use>
-              </svg>
+            <li class="header__navlist">
+              <a href="#" class="header__navlist__link">About us</a>
             </li>
           </ul>
         </nav>
+        <ul class="header__action__list">
+          <li class="header__action__item">
+            <button header__action__btn>log in</button>
+          </li>
+          <li class="header__action__item">
+            <svg width="30" height="30" class="header__cart__btn">
+              <use href="./icons/sprite.svg#cart"></use>
+            </svg>
+          </li>
+
+          <li class="header__action__item">
+            <svg
+              width="30"
+              height="30"
+              class="header__burger__btn"
+              data-menu-open
+            >
+              <use href="./icons/sprite.svg#burger"></use>
+            </svg>
+          </li>
+        </ul>
       </div>
+
       <div class="mobile" data-menu>
         <ul class="mobile__menu">
           <li class="mobile__menu__item">
@@ -651,5 +659,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/main.js"></script>
   </body>
 </html>

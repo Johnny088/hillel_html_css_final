@@ -1,10 +1,11 @@
 body {
     background: $main_color;
+    font-family: sans-serif;
     font-size: $base_size;
     color: white
 }
 
-p, h1,h2,h3, ul{
+p, h1,h2,h3,h4 ul{
   margin: 0;
   padding: 0;
 }
@@ -15,5 +16,12 @@ img{
 
 ul{
   list-style: none;
+}
+
+button{
+  cursor: pointer;
+}
+a{
+  text-decoration: none;
 }
 
