@@ -1,6 +1,7 @@
 body {
   background: linear-gradient(90deg, #1c0c00, #1c0700, #140900, #1c0c00);
   font-size: 16px;
+  color: white;
 }
 
 p, h1, h2, h3, ul {
@@ -16,7 +17,7 @@ ul {
   list-style: none;
 }
 
-.header__icon, .header__cart, .header__burger {
+.header__icon, .header__cart, .header__burger, .hero__lighting {
   stroke: #FFA228;
   fill: #FF6432;
 }/*# sourceMappingURL=main.css.map */

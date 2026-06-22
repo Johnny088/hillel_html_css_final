@@ -66,22 +66,382 @@
           <li class="mobile__menu__item">
             <a href="#" class="mobile__menu__link">About us</a>
           </li>
+          <li>
+            <button class="close__btn" data-menu-close>Close menu</button>
+          </li>
         </ul>
       </div>
     </header>
     <main>
       <section class="hero">
         <div class="container">
-          <div>
+          <div class="hero__info">
+            <h1 class="hero__title">
+              The Fastest Pizza
+              <svg class="hero__lighting" width="48" heght="84">
+                <use href="./icons/sprite.svg#lightning"></use>
+              </svg>
+              Delivery
+            </h1>
+            <p hero__description>
+              We will deliver juicy pizza for your family in 30 minutes, if the
+              courier is late -
+              <span class="hero__description__span">pizza is free</span>!
+            </p>
             <img
-              src="./sass/images/hero_pizza_mob.svg"
-              alt="pizza"
-              class="hero__pizza"
+              src="./images/cooking_proc_m.png"
+              alt="cooking process"
+              srcset="
+                ./images/cooking_proc_m.png    1x,
+                ./images/cooking_proc_2x_m.png 2x
+              "
+              class="hero_video"
             />
-            <img src="./sass/images/pizza_slice_mob.svg" alt="" />
-            <img src="./sass/images/hero_fries_mob.svg" alt="" />
+            <svg><use href="./icons/sprite.svg#arrow_hero"></use></svg>
+          </div>
+          <div class="hero__photos">
+            <img
+              class="hero__pizza"
+              src="./images/hero_pizza.png"
+              alt="pizza"
+              srcset="./images/hero_pizza.png 1x, ./images/hero__pizza_x2.png x2"
+            />
+            <img
+              class="hero__slice"
+              src="./images/pizza_hero_m.png"
+              alt="slice of pizza"
+              srcset="
+                ./images/pizza_hero_m.png    1x,
+                ./images/pizza_hero_x2_m.png 2x
+              "
+            />
+            <img
+              src="./images/fries_hero_m.png"
+              alt="fries"
+              srcset="
+                ./images/fries_hero_m.png    1x,
+                ./images/fries_hero_x2_m.png 2x
+              "
+            />
           </div>
         </div>
+      </section>
+      <section class="menu">
+        <div class="container">
+          <h2 class="menu__title">Menu</h2>
+          <ul class="menu_list">
+            <li class="menu__option">
+              <button menu__option__button>Show All</button>
+            </li>
+            <li class="menu__option">
+              <button menu__option__button>Meat</button>
+            </li>
+            <li class="menu__option">
+              <button menu__option__button>Vegetarian</button>
+            </li>
+            <li class="menu__option">
+              <button menu__option__button>Sea products</button>
+            </li>
+            <li class="menu__option">
+              <button menu__option__button>Mushroom</button>
+            </li>
+          </ul>
+          <ul class="menu__list">
+            <li menu__item>
+              <img
+                class="menu__img"
+                src="./images/italian_m.png"
+                alt="italian pizza"
+                srcset="./images/italian_m.png 1x, ./images/italian_x2_m.png x2"
+              />
+
+              <h3 class="menu__title">Italian</h3>
+
+              <p class="menu__describtion">
+                Filling: onion, potato, tomato, mushrooms, cheese, olives,
+                meat...
+              </p>
+
+              <ul class="menu__size">
+                <li>22</li>
+                <li>28</li>
+                <li>33</li>
+              </ul>
+
+              <button class="menu__ingridients__btn">+ Ingridients</button>
+
+              <div class="menu__price">
+                <div class="menu__price__wraper">
+                  <span class="menu__price__total">8.35<sup>$</sup></span>
+                </div>
+
+                <div class="menu__price__wrapper">
+                  <button type="button" class="menu__price__counter">-</button>
+
+                  <span class="menu_number">1</span>
+
+                  <button type="button" class="menu__price__counter">+</button>
+                </div>
+              </div>
+              <button class="menu__order">Order now</button>
+            </li>
+
+            <li menu__item>
+              <img
+                class="menu__img"
+                src="./images/venecia_m.png"
+                alt="Venecia pizza"
+                srcset="./images/venecia_m.png 1x, ./images/venecia_x2_m.png x2"
+              />
+              <h3 class="menu__title">Venecia</h3>
+
+              <p class="menu__describtion">
+                Filling: onion, potato, tomato, mushrooms, cheese, olives,
+                meat...
+              </p>
+
+              <ul class="menu__size">
+                <li>22</li>
+                <li>28</li>
+                <li>33</li>
+              </ul>
+
+              <button class="menu__ingridients__btn">+ Ingridients</button>
+              <div class="menu__price">
+                <div class="menu__price__wraper">
+                  <span class="menu__price__total">7.35<sup>$</sup></span>
+                </div>
+                <div class="menu__price__wrapper">
+                  <button type="button" class="menu__price__counter">-</button>
+                  <span class="menu__number">1</span>
+                  <button type="button" class="menu__price__counter">+</button>
+                </div>
+              </div>
+              <button class="menu__order">Order now</button>
+            </li>
+
+            <li menu__item>
+              <img
+                class="menu__img"
+                src="./images/meat_m.png"
+                alt="meat pizza"
+                srcset="./images/meat_m.png 1x, ./images/meat_x2_m.png x2"
+              />
+              <h3 class="menu__title">Meat</h3>
+
+              <p class="menu__describtion">
+                Filling: onion, potato, tomato, mushrooms, cheese, olives,
+                meat...
+              </p>
+
+              <ul class="menu__size">
+                <li>22</li>
+                <li>28</li>
+                <li>33</li>
+              </ul>
+
+              <button class="menu__ingridients__btn">+ Ingridients</button>
+              <div class="menu__price">
+                <div class="menu__price__wraper">
+                  <span class="menu__price__total">9.35<sup>$</sup></span>
+                </div>
+                <div class="menu__price__wrapper">
+                  <button type="button" class="menu__price__counter">-</button>
+                  <span class="menu__number">1</span>
+                  <button type="button" class="menu__price__counter">+</button>
+                </div>
+              </div>
+              <button class="menu__order">Order now</button>
+            </li>
+
+            <li menu__item>
+              <img
+                class="menu__img"
+                src="./images/cheese_m.png"
+                alt="cheese pizza"
+                srcset="./images/cheese_m.png 1x, ./images/cheese_x2_m.png x2"
+              />
+              <h3 class="menu__title">Cheese</h3>
+
+              <p class="menu__describtion">
+                Filling: onion, potato, tomato, mushrooms, cheese, olives,
+                meat...
+              </p>
+
+              <ul class="menu__size">
+                <li>22</li>
+                <li>28</li>
+                <li>33</li>
+              </ul>
+
+              <button class="menu__ingridients__btn">+ Ingridients</button>
+              <div class="menu__price">
+                <div class="menu__price__wraper">
+                  <span class="menu__price__total">8.35<sup>$</sup></span>
+                </div>
+                <div class="menu__price__wrapper">
+                  <button type="button" class="menu__price__counter">-</button>
+                  <span class="menu__number">1</span>
+                  <button type="button" class="menu__price__counter">+</button>
+                </div>
+              </div>
+              <button class="menu__order">Order now</button>
+            </li>
+          </ul>
+
+          <!-- ------------------------------------------------------------------------------------ -->
+
+          <img
+            class="menu__popular"
+            src="./images/menu_popular_x1.png"
+            alt="Popular pizza"
+            srcset="././images/menu_popular_x1.png x1, ./images/menu_popular_x2.png x2"
+          />
+          <h4 class="menu__popular__title">MOST POPULAR PIZZA</h4>
+        </div>
+        <!--   -------------------------------------------------------------------------------------- -->
+
+        <ul class="menu__list">
+          <li menu__item>
+            <img
+              class="menu__img"
+              src="./images/argentina_m.png"
+              alt="Argentina"
+              srcset="./images/argentina_m.png 1x, ./images/argentina_x2_m.png  x2"
+            />
+
+            <h3 class="menu__title">Argentina</h3>
+
+            <p class="menu__describtion">
+              Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...
+            </p>
+
+            <ul class="menu__size">
+              <li>22</li>
+              <li>28</li>
+              <li>33</li>
+            </ul>
+
+            <button class="menu__ingridients__btn">+ Ingridients</button>
+
+            <div class="menu__price">
+              <div class="menu__price__wraper">
+                <span class="menu__price__total">7.35<sup>$</sup></span>
+              </div>
+
+              <div class="menu__price__wrapper">
+                <button type="button" class="menu__price__counter">-</button>
+
+                <span class="menu_number">1</span>
+
+                <button type="button" class="menu__price__counter">+</button>
+              </div>
+            </div>
+            <button class="menu__order">Order now</button>
+          </li>
+
+          <li menu__item>
+            <img
+              class="menu__img"
+              src="./images/mashrooms_m.png"
+              alt="Mashroom"
+              srcset="./images/mashrooms_x2_m.png 1x, ./images/mashrooms_x2_m.png x2"
+            />
+            <h3 class="menu__title">Mashroom</h3>
+
+            <p class="menu__describtion">
+              Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...
+            </p>
+
+            <ul class="menu__size">
+              <li>22</li>
+              <li>28</li>
+              <li>33</li>
+            </ul>
+
+            <button class="menu__ingridients__btn">+ Ingridients</button>
+            <div class="menu__price">
+              <div class="menu__price__wraper">
+                <span class="menu__price__total">6.35<sup>$</sup></span>
+              </div>
+              <div class="menu__price__wrapper">
+                <button type="button" class="menu__price__counter">-</button>
+                <span class="menu__number">1</span>
+                <button type="button" class="menu__price__counter">+</button>
+              </div>
+            </div>
+            <button class="menu__order">Order now</button>
+          </li>
+
+          <li menu__item>
+            <img
+              class="menu__img"
+              src="./images/tomato_m.png"
+              alt="Tomato"
+              srcset="./images/tomato_m.png 1x, ./images/tomato_x2_m.png x2"
+            />
+            <h3 class="menu__title">Tomato</h3>
+
+            <p class="menu__describtion">
+              Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...
+            </p>
+
+            <ul class="menu__size">
+              <li>22</li>
+              <li>28</li>
+              <li>33</li>
+            </ul>
+
+            <button class="menu__ingridients__btn">+ Ingridients</button>
+            <div class="menu__price">
+              <div class="menu__price__wraper">
+                <span class="menu__price__total">7.35<sup>$</sup></span>
+              </div>
+              <div class="menu__price__wrapper">
+                <button type="button" class="menu__price__counter">-</button>
+                <span class="menu__number">1</span>
+                <button type="button" class="menu__price__counter">+</button>
+              </div>
+            </div>
+            <button class="menu__order">Order now</button>
+          </li>
+
+          <li menu__item>
+            <img
+              class="menu__img"
+              src="./images/italian_v2_x1.png "
+              alt="cheese pizza"
+              srcset="./images/italian_v2_x1.png 1x, ./images/italian_v2_x2.png  x2"
+            />
+            <h3 class="menu__title">Italian x2</h3>
+
+            <p class="menu__describtion">
+              Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...
+            </p>
+
+            <ul class="menu__size">
+              <li>22</li>
+              <li>28</li>
+              <li>33</li>
+            </ul>
+
+            <button class="menu__ingridients__btn">+ Ingridients</button>
+            <div class="menu__price">
+              <div class="menu__price__wraper">
+                <span class="menu__price__total">8.35<sup>$</sup></span>
+              </div>
+              <div class="menu__price__wrapper">
+                <button type="button" class="menu__price__counter">-</button>
+                <span class="menu__number">1</span>
+                <button type="button" class="menu__price__counter">+</button>
+              </div>
+            </div>
+            <button class="menu__order">Order now</button>
+          </li>
+        </ul>
+      </section>
+      <section class="events">
+        <div class="container"></div>
       </section>
     </main>
   </body>
